@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Shenba Murugan | Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #a7c2c7;
+            color: #111;
+        }
+
+        /* ===== NAVBAR ===== */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #fff;
+            border-bottom: 1px solid #eee;
+            padding: 18px 10%;
+            display: flex;
+            justify-content: space-between;
+            z-index: 1000;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #444;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        /* ===== LINKEDIN STYLE BANNER ===== */
+
+        .banner {
+            margin-top: 55px;
+        }
+
+        .banner-cover {
+            width: 100%;
+            height: 500px;
+            background: url("SHENBA.png") center/cover no-repeat;
+        }
+
+        .profile-area {
+            padding: 0 12%;
+            position: relative;
+        }
+
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 6px solid #fff;
+            object-fit: cover;
+            margin-top: -70px;
+            /* makes image overlap banner */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .profile-text {
+            margin-top: 15px;
+        }
+
+        .profile-text h1 {
+            font-size: 32px;
+        }
+
+        .profile-text p {
+            color: #555;
+            margin-top: 8px;
+            max-width: 600px;
+        }
+
+        /* ===== BUTTON ===== */
+        .btn {
+            display: inline-block;
+            margin-top: 18px;
+            padding: 10px 24px;
+            background: #111;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+        }
+
+        /* ===== SECTIONS ===== */
+        section {
+            padding: 80px 12%;
+        }
+
+        h2 {
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+
+        /* ===== GRID ===== */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            border: 1px solid #eee;
+            padding: 20px;
+            border-radius: 12px;
+            background: #fafafa;
+            transition: .3s;
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #111;
+        }
+
+        /* ===== SKILLS ===== */
+        .skills span {
+            display: inline-block;
+            border: 1px solid #111;
+            padding: 8px 16px;
+            margin: 6px;
+            border-radius: 20px;
+            font-size: 13px;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div><b>Shenba Murugan</b></div>
+        <div>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#skills">Skills</a>
+
+    <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- ===== LINKEDIN STYLE HERO ===== -->
+    <div class="banner">
+
+        <div class="banner-cover"></div>
+
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p style="max-width: 1200px;color:#555; margin-bottom: 15px; line-height: 1.6;">
+            I am a dedicated Final Year Computer Science Engineering student with a strong focus on Full Stack Web
+            Development and Cloud Computing.
+            My academic journey has equipped me with a solid foundation in software engineering principles, which I
+            apply to build scalable and efficient web applications.
+            I am passionate about writing clean, maintainable code and solving complex technical challenges.
+        </p>
+        <p style="max-width: 1200px;color:#555; line-height: 1.6;">
+            In addition to my technical skills, I have practical experience in Digital Marketing, allowing me to bridge
+            the gap between development and user engagement.
+            I am a continuous learner, always exploring new technologies and best practices to stay ahead in the rapidly
+            evolving tech landscape.
+            I am currently seeking opportunities to leverage my skills in a dynamic environment where I can contribute
+            to innovative digital solutions.
+        </p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="grid">
+            <a href="https://realtime-chat-app-4c23c.web.app/" class="card" target="_blank" rel="noopener noreferrer">
+                <h3>Cloud Chat Application</h3>
+                <p>React + Firebase real-time chat app with authentication and cloud database.</p>
+            </a>
+            <div class="card">
+                <h3>Smart Assistive Alert System</h3>
+                <p>An IoT-based monitoring solution for elderly and specially-abled people. Features motion detection,
+                    face recognition (Haar Cascade & LBPH), and automated alerts via wearable devices and emergency
+                    calls.</p>
+                <p style="margin-top: 10px; font-size: 0.9em; color: #555;"><strong>Workflow:</strong> PIR Motion
+                    Sensing → Face Recognition → Django DB → Smart Alerts</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="grid">
+
+            <div class="card">
+                <h3>Cabocab - Digital Marketing Intern</h3>
+                <p>Created promotional content and marketing ideas.</p>
+            </div>
+
+            <div class="card">
+                <h3>KarvySoft - Full Stack Intern</h3>
+                <p>Worked on front-end and back-end integration workflow.</p>
+            </div>
+
+            <div class="card">
+                <h3>AK Infopark - Web Development Intern</h3>
+                <p>Hands-on HTML & CSS development using VS Code.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Python Basics</span>
+            <span>AWS</span>
+            <span>Cloud Computing</span>
+            <span>Software Testing</span>
+            <span>Digital Marketing</span>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Introduction to Front End Development</h3>
+                <p>Simplilearn SkillUp | Feb 2025</p>
+                <p style="font-size: 0.9em; color: #555; margin-top: 5px;">Comprehensive training in fundamental web
+                    technologies.</p>
+            </div>
+            <div class="card">
+                <h3>Full Stack Development MasterClass</h3>
+                <p>NoviTech R&D Pvt Ltd | June - July 2024</p>
+                <p style="font-size: 0.9em; color: #555; margin-top: 5px;">Intensive 30-day program covering full-stack
+                    web development practices.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: shenbamurugan5@gmail.com</p>
+        <p>Phone: +91 9360234428</p>
+    </section>
+
+    <footer>
+        © 2026 Shenba Murugan Portfolio
+    </footer>
+
+</body>
+
+</html>
